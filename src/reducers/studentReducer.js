@@ -16,11 +16,8 @@ const studentSlice = createSlice({
       state.courses = action.payload;
     },
     toggleStudentCourseComplete(state, action) {
-      state.courses.forEach((course) => {
-        if(course.id === action.payload.courseId){
-          course.id = !course.id;
-        }
-      })
+      const courseToModify = state.courses.find((course) => course.id === action.payload);
+      courseToModify.completed = !(courseToModify.completed);
     }
   },
 })

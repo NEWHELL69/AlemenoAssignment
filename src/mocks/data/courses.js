@@ -59,22 +59,6 @@ const courses = [
                 name: 'Alice Johnson',
                 email: 'alice@example.com',
             },
-            {
-                id: 102,
-                name: 'Bob Smith',
-                email: 'bob@example.com',
-            },
-            {
-                id: 103,
-                name: 'Charlie Brown',
-                email: 'charlie@example.com',
-            },
-            {
-                id: 104,
-                name: 'Diana Miller',
-                email: 'diana@example.com',
-            },
-            // Additional enrolled students...
         ],
     },
     {
@@ -144,21 +128,15 @@ const courses = [
         ],
         students: [
             {
-                id: 201,
-                name: 'Eva Davis',
-                email: 'eva@example.com',
+                id: 101,
+                name: 'Alice Johnson',
+                email: 'alice@example.com',
             },
             {
                 id: 202,
                 name: 'Frank Martinez',
                 email: 'frank@example.com',
             },
-            {
-                id: 203,
-                name: 'Grace Turner',
-                email: 'grace@example.com',
-            },
-            // Additional enrolled students...
         ],
     }
 ];

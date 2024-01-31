@@ -6,8 +6,8 @@ import { Navigate } from "react-router-dom";
 import Notification from "../components/Notification";
 
 const StudentLogin = () => {
-    const emailField = useField("text");
-    const passwordField = useField("password");
+    const emailField = useField("text", "alice@example.com");
+    const passwordField = useField("password", "password123");
     const dispatch = useDispatch();
     const student = useSelector(state => state.student);
 
@@ -30,10 +30,6 @@ const StudentLogin = () => {
                     <label>Password: <input {...passwordField}/></label>
                     <button type="submit">Submit</button>
                 </form>
-                <div>
-                    <span>john.doe@example.com</span><br/>
-                    <span>password123</span>
-                </div>
             </div>
         </div>
     )
