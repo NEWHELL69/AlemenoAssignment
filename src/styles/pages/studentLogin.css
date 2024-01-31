@@ -1,0 +1,30 @@
+#studentLogin {
+    height: 100vh;
+    position: relative;
+}
+
+#studentLogin .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#studentLogin .center > * + * {
+    margin-top: 24px;
+}
+
+#studentLogin form {
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+#studentLogin form > * + * {
+    margin-top: 12px;
+}
+
+#studentLogin form button {
+    align-self: center;
+    min-width: 240px;
+}

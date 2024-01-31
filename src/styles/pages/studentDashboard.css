@@ -1,0 +1,45 @@
+#studentDashboard {
+    height: 100vh;
+    padding: 12px;
+}
+
+#studentDashboard p {
+    margin: 0;
+}
+
+#studentDashboard > div {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+#studentDashboard > div > * + * {
+    margin-top: 12px;
+}
+
+#studentDashboard h2 {
+    font-size: large;
+    margin: 0;
+}
+
+#studentDashboard .studentDashboardCourse {
+    padding: 12px;
+    border: 1px solid black;
+}
+
+#studentDashboard .studentDashboardCourse .heading {
+    font-weight: bolder;
+}
+
+
+#studentDashboard .studentDashboardCourse {
+    display: flex;
+}
+
+#studentDashboard .studentDashboardCourse .courseImage {
+    flex: auto;
+}
+
+#studentDashboard .studentDashboardCourse .courseImage img {
+    max-height: 120px;
+}
