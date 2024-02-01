@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import "../styles/pages/studentDashboard.css";
 import { useEffect, useState } from "react";
 import { fetchStudentCourses, toggleStudentCourseCompleted } from "../reducers/studentReducer";
@@ -46,6 +46,7 @@ const StudentDashboard = () => {
     const student = useSelector(state => state.student);
     const dispatch = useDispatch();
     const [studentCoursesFetched, setStudentCoursesFetched] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(fetchStudentCourses()).then(() => {
@@ -60,6 +61,7 @@ const StudentDashboard = () => {
     return (
         <div id="studentDashboard">
             <div>
+                <button style={{ width: "100%" }} onClick={() => {navigate("/courses")}}>View all the courses</button>
                 <Notification/>
                 <div id="studentInformation">
                     <h2>Name: {student.name}</h2>

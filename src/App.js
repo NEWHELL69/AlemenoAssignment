@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import StudentDashboard from "./pages/StudentDashboard";
 import StudentLogin from "./pages/StudentLogin";
 import CourseDetails from "./pages/CourseDetails";
-import CourseListing from "./pages/CourseListing";
+import Courses from "./pages/Courses";
 import "./styles/reset.css"
 import "./styles/app.css"
 import "./styles/globals.css"
@@ -34,8 +34,8 @@ function App() {
       <Routes>
         <Route path="/" element={<StudentLogin/>}/>
         <Route path="/student" element={<StudentDashboard/>}/>
-        <Route path="/course" element={<CourseDetails/>}/>
-        <Route path="/listing" element={<CourseListing/>}/>
+        <Route path="/course/:id" element={<CourseDetails/>}/>
+        <Route path="/courses" element={<Courses/>}/>
       </Routes>
     </>
   )

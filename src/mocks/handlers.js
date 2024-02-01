@@ -45,4 +45,7 @@ export const handlers = [
 
     return HttpResponse.json(coursesToSend);
   }),
+  http.get('/api/courses', async ({ request }) => {
+    return HttpResponse.json(courses);
+  }),
 ]

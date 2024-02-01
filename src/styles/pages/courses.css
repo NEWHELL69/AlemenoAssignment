@@ -1,0 +1,32 @@
+#courses {
+    padding: 12px;
+    height: 100vh;
+}
+
+#courseSearchField {
+    margin-bottom: 12px;
+}
+
+#courses #courses_list {
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+#courses .courses_displayBasicInfo + .courses_displayBasicInfo{
+    margin-top: 6px;
+}
+
+#courses .courses_displayBasicInfo {
+    cursor: pointer;
+    width: fit-content;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+#courses .courses_displayBasicInfo p {
+    margin: 0;
+}
+
+#courses .courses_displayBasicInfo:hover {
+    background-color: turquoise;
+}
