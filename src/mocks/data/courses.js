@@ -71,7 +71,7 @@ const courses = [
         duration: '10 weeks',
         schedule: 'Mondays and Wednesdays, 7:00 PM - 9:00 PM',
         location: 'In-Person',
-        prerequisites: ['None'],
+        prerequisites: [],
         likes: 8,
         syllabus: [
             {

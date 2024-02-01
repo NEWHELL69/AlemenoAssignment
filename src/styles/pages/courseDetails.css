@@ -1,0 +1,16 @@
+#courseDetails {
+    padding: 12px;
+}
+
+#courseDetails .heading {
+    font-weight: bolder;
+}
+
+#courseDetails p {
+    margin: 0;
+}
+
+#courseDetails details {
+    border: 1px solid black;
+    padding: 6px;
+}
