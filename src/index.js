@@ -5,13 +5,13 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import store from './store.js';
 import { Provider } from 'react-redux';
 
+const { worker } = await import('./mocks/browser.js')
+
 async function enableMocking() {
   // if (process.env.NODE_ENV !== 'development') {
   //   return;
   // }
- 
-  const { worker } = await import('./mocks/browser.js')
- 
+  
   // `worker.start()` returns a Promise that resolves
   // once the Service Worker is up and ready to intercept requests.
   return worker.start()
